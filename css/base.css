@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #C00A27;
+    --primary-text-color: #F7AE00;
+    --btn-color: #8CA93E;
+    --text-color: #3333;
+}
+
+/* Responsive chung cho tablet, mobile */
+@media (max-width: 1023px){
+    .nav.hide-mobile, 
+    .user__modal.active.hide-mobile, 
+    .user__login__form.active.hide-mobile, 
+    .user__sing-up__form.active.hide-mobile,
+    .product-list-tabs.hide-mobile{
+        display: none;
+    }
+    .row{
+        margin: 0px;
+    }
+    .new-donut{
+        margin-top: 10px;
+    }
+    .product-list-tabs-mobile{
+        display: none;
+    }
+    .product-list-tabs-mobile.active{
+        display: block;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        overflow: hidden;
+        background-color:gainsboro
+    }
+    .product-list-tab-items-mobile{
+        font-size: 1.4rem;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .product-list-tab-items-mobile.active{
+        background-color: var(--primary-color);
+        color: white;
+        font-weight:800;
+        font-size: 1.6rem;
+    }
+}
+
+
+
+/* Responsive cho PC */
+@media (min-width: 1024px){
+    .nav-mobile.hide-pc,
+    .modal.active.hide-pc,
+    .nav__mobile__content.modal.active.hide-pc,
+    .user__modal__mobile.active.hide-pc,
+    .user__mobile__login__form.active.hide-pc,
+    .user__mobile__sign-up__form.active.hide-pc,
+    .product-list-tabs-mobile.hide-pc{
+        display: none;
+    }
+}
+
+@keyframes nav-mobile{
+    from{
+        left: -70%;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes cart-active{
+    from{
+        opacity: 0;
+        top: -100%;
+    }
+    to{
+        opacity: 1;
+        top: 2px;
+    }
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes user-form{
+    from{
+        opacity: 0;
+        top: 0%;
+    }
+    top{
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+@keyframes form-mobile{
+    from{
+        opacity: 0;
+        top: -100%;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes form-move{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes toast-message {
+    from{
+        right: -100%;
+    }
+    to{
+        right: 0;
+    }
+}
+
+@keyframes hide-toast-message {
+    from{
+        opacity: 1;
+        right: 0;
+    }
+    to{
+        opacity: 0;
+        right: -100%;
+    }
+}

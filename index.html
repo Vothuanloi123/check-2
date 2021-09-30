@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>L-FOOD</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="grid wide">
+            <div class="nav hide-mobile">
+                <div class="nav__logo">
+                    <img src="./Project Image/Logo Png/logo.png" alt="" class="nav__logo__item">
+                </div>
+                <div class="nav__list">
+                    <div class="nav__product">
+                        <div class="nav__product__text-wrap">
+                            <span class="nav__itemt__text">Product</span>
+                            <i class="ti-angle-down"></i>
+                        </div>
+                        <div class="nav__product__list">
+                            <a href="#new-special-product-content">
+                                <div class="nav__product__item">New product</div>
+                            </a>
+                            <div class="nav__product__item" onclick="handelNavBarPC('pizza')">Pizza</div>
+                            <div class="nav__product__item" onclick="handelNavBarPC('burger')">Hamberger</div>
+                            <div class="nav__product__item" onclick="handelNavBarPC('donut')">Donut</div>
+                        </div>
+                    </div>
+                    <div class="nav__item">
+                        <span class="nav__itemt__text">News</span>
+                    </div>
+                    <div class="nav__item">
+                        <span class="nav__itemt__text">Store Location</span>
+                    </div>
+                    <div class="nav__item">
+                        <span class="nav__itemt__text">Recruitment</span>
+                    </div>
+
+                </div>
+                <div class="nav__cart">
+                    <div class="user">
+                        <div class="user__login">
+                            Login
+                        </div>
+                        <div class="user__sign-up">
+                            Sign up
+                        </div>
+                    </div>
+                    <div class="nav__cart--wraper">
+                        <div class="nav__cart__text-content">
+                            <i class="ti-shopping-cart"></i>
+                            <span class="nav__cart__text--no-item active">Your car is empty</span>
+                            <span class="nav__cart__text--have-item">Go to cart</span>
+                        </div>
+                        <div class="nav__cart__item">
+                            <div class="nav__list_cart-item">
+                                <div class="nav__list__cart-value">
+                                    <span class="value-cart">
+                                        0
+                                    </span>
+                                    <span class="text-value-cart">
+                                        items
+                                    </span>
+                                </div>
+                                <div class="nav__list__cart-">
+                                    <span class="text-value-cart">
+                                        $
+                                    </span>
+                                    <span class="value-price-cart">
+                                        0
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-mobile hide-pc">
+                <div class="nav__mobile__icon">
+                    <i class="ti-menu"></i>
+                </div>
+                <div class="nav__mobile__logo">
+                    <img src="./Project Image/Logo Png/logo.png" alt="" class="nav__moblie__logo-img">
+                </div>
+                <div class="nav__mobile__icon__user">
+                    <i class="ti-user"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="slider">
+            <img src="./Project Image/Content Image First/content-first.jpg" alt="" class="slider-img">
+            <div class="content__slider">
+                <!--Chờ ghi vào content của Slider-->
+            </div>
+        </div>
+        <div class="new-special-product">
+            <div class="grid wide">
+                <div class="row" id="new-special-product-content">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="special-product">
+                            <img src="./Project Image/New And Special Image/special-burger.png"
+                                class="special-product-img" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="new-product">
+                            <div class="row">
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="new-donut">
+                                        <img src="./Project Image/New And Special Image/new-donut-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="new-donut">
+                                        <img src="./Project Image/New And Special Image/new-donut-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col l-12 c-12 m-12">
+                                    <div class="new-pizza">
+                                        <img src="./Project Image/New And Special Image/new-pizza-1-column.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-list">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12 c-0 m-0">
+                        <div class="product-list-tabs hide-mobile">
+                            <div class="product-list-tab-items" id="tab-donut" data-nametab="donut">Donut</div>
+                            <div class="product-list-tab-items active" id="tab-pizza" data-nametab="pizza">Pizza</div>
+                            <div class="product-list-tab-items" id="tab-burger" data-nametab="burger">Burger</div>
+                        </div>
+                    </div>
+                    <div class="product-list-tabs-mobile hide-pc">
+                        <div class="product-list-tab-items-mobile" id="tab-mobile-donut" data-nametab="donut">Donut
+                        </div>
+                        <div class="product-list-tab-items-mobile active" id="tab-mobile-pizza" data-nametab="pizza">
+                            Pizza
+                        </div>
+                        <div class="product-list-tab-items-mobile" id="tab-mobile-burger" data-nametab="burger">Burger
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="product-list-panes">
+                        <div class="product-list-pane" id="donut">
+                            <div class="row">
+                                <div class="col l-3 m-6 c-12">
+                                    <div class="product-item" onclick="handelDetailPage()">
+                                        <div class="product-image">
+                                            <img src="./Project Image/Product Image/Donut/d1.png" alt="">
+                                        </div>
+                                        <div class="product-content-text">
+                                            <div class="prouct-title">
+                                                Donut 1
+                                            </div>
+                                            <div class="product-desc">
+                                                Shrimp, Red Capsicum, Green Capsicum, Onion, Chilli flakes, Lemon
+                                                Pepper, Mozzarella, finished with Aioli
+                                            </div>
+                                        </div>
+                                        <div class="product-btn">
+                                            Select options
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-12">
+                                    <div class="product-item" onclick="handelDetailPage()">
+                                        <div class="product-image">
+                                            <img src="./Project Image/Product Image/Donut/d2.png" alt="">
+                                        </div>
+                                        <div class="product-content-text">
+                                            <div class="prouct-title">
+                                                Donut 1
+                                            </div>
+                                            <div class="product-desc">
+                                                Shrimp, Red Capsicum, Green Capsicum, Onion, Chilli flakes, Lemon
+                                                Pepper, Mozzarella, finished with Aioli
+                                            </div>
+                                        </div>
+                                        <div class="product-btn">
+                                            Select options
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list-pane active" id="pizza">
+                            <div class="row">
+                                <div class="col l-3 m-6 c-12">
+                                    <div class="product-item" onclick="handelDetailPage()">
+                                        <div class="product-image">
+                                            <img src="./Project Image/Product Image/Pizza/p1.png" alt="">
+                                        </div>
+                                        <div class="product-content-text">
+                                            <div class="prouct-title">
+                                                Pizza summer
+                                            </div>
+                                            <div class="product-desc">
+                                                Crispy bacon, tasty ham, pineapple, onion and stretchy mozzarella,
+                                                finished with a BBQ swirl.
+                                            </div>
+                                        </div>
+                                        <div class="product-btn">
+                                            Select options
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-12">
+                                    <div class="product-item" onclick="handelDetailPage()">
+                                        <div class="product-image">
+                                            <img src="./Project Image/Product Image/Pizza/p2.png" alt="">
+                                        </div>
+                                        <div class="product-content-text">
+                                            <div class="prouct-title">
+                                                Pizza summer
+                                            </div>
+                                            <div class="product-desc">
+                                                Crispy bacon, tasty ham, pineapple, onion and stretchy mozzarella,
+                                                finished with a BBQ swirl.
+                                            </div>
+                                        </div>
+                                        <div class="product-btn">
+                                            Select options
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list-pane" id="burger">
+                            <div class="row">
+                                <div class="col l-3 m-6 c-12">
+                                    <div class="product-item" onclick="handelDetailPage()">
+                                        <div class="product-image">
+                                            <img src="./Project Image/Product Image/Burger/b1.png" alt="">
+                                        </div>
+                                        <div class="product-content-text">
+                                            <div class="prouct-title">
+                                                Buger Special
+                                            </div>
+                                            <div class="product-desc">
+                                                Extra-virgin olive oil, garlic, mozzarella cheese, onions, mushrooms,
+                                                green olives, black olives, fresh tomatoes. </div>
+                                        </div>
+                                        <div class="product-btn">
+                                            Select options
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-12">
+                                    <div class="product-item">
+                                        <div class="product-image" onclick="handelDetailPage()">
+                                            <img src="./Project Image/Product Image/Burger/b2.png" alt="">
+                                        </div>
+                                        <div class="product-content-text">
+                                            <div class="prouct-title">
+                                                Buger Special
+                                            </div>
+                                            <div class="product-desc">
+                                                Extra-virgin olive oil, garlic, mozzarella cheese, onions, mushrooms,
+                                                green olives, black olives, fresh tomatoes. </div>
+                                        </div>
+                                        <div class="product-btn">
+                                            Select options
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-best-offer">
+            <div class="banner-best-offer__image">
+                <img src="./Project Image/Banner-sale/image-banner.jpg" alt="">
+            </div>
+            <div class="banner-best-offer-image__content">
+
+            </div>
+        </div>
+        <div class="top-product-best-choice">
+            <div class="grid wide">
+                <div class="top-product-best-choice__title">
+                    <span>
+                        Best choice today
+                    </span>
+                </div>
+                <div class="top-product-best-choice__content">
+
+                    <div class="top-product-best-choice__content__product">
+                        <div class="top-product-best-choice__content__item" onclick="handelDetailPage()">
+                            <div class="product-best-choice-image">
+                                <img src="./Project Image/Product Image/Donut/d1.png" alt="">
+                            </div>
+                            <div class="product-best-choice-content-text">
+                                <div class="prouct-best-choice-title">
+                                    Donut 1
+                                </div>
+                                <div class="product-best-choice-desc">
+                                    Shrimp, Red Capsicum, Green Capsicum, Onion, Chilli flakes, Lemon
+                                    Pepper, Mozzarella, finished with Aioli
+                                </div>
+                            </div>
+                            <div class="product-best-choice-btn">
+                                Select options
+                            </div>
+                        </div>
+                        <div class="top-product-best-choice__content__item" onclick="handelDetailPage()">
+                            <div class="product-best-choice-image">
+                                <img src="./Project Image/Product Image/Pizza/p1.png" alt="">
+                            </div>
+                            <div class="product-best-choice-content-text">
+                                <div class="prouct-best-choice-title">
+                                    Pizza summer
+                                </div>
+                                <div class="product-best-choice-desc">
+                                    Crispy bacon, tasty ham, pineapple, onion and stretchy mozzarella, finished with a
+                                    BBQ swirl.
+                                </div>
+                            </div>
+                            <div class="product-best-choice-btn">
+                                Select options
+                            </div>
+                        </div>
+                        <div class="top-product-best-choice__content__item" onclick="handelDetailPage()">
+                            <div class="product-best-choice-image">
+                                <img src="./Project Image/Product Image/Burger/b1.png" alt="">
+                            </div>
+                            <div class="product-best-choice-content-text">
+                                <div class="prouct-best-choice-title">
+                                    Buger Special
+                                </div>
+                                <div class="product-best-choice-desc">
+                                    Extra-virgin olive oil, garlic, mozzarella cheese, onions, mushrooms, green olives,
+                                    black olives, fresh tomatoes.
+                                </div>
+                            </div>
+                            <div class="product-best-choice-btn">
+                                Select options
+                            </div>
+                        </div>
+                        <div class="top-product-best-choice__content__item" onclick="handelDetailPage()">
+                            <div class="product-best-choice-image">
+                                <img src="./Project Image/Product Image/Donut/d2.png" alt="">
+                            </div>
+                            <div class="product-best-choice-content-text">
+                                <div class="prouct-best-choice-title">
+                                    Donut 1
+                                </div>
+                                <div class="product-best-choice-desc">
+                                    Shrimp, Red Capsicum, Green Capsicum, Onion, Chilli flakes, Lemon
+                                    Pepper, Mozzarella, finished with Aioli
+                                </div>
+                            </div>
+                            <div class="product-best-choice-btn">
+                                Select options
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="criteria">
+            <gird class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="criteria-box">
+                            <div class="criteria-box__image">
+                                <img src="./Project Image/ADS/ads_best-quanlity.png" alt="">
+                            </div>
+                            <div class="criteria-box__content">
+                                <div class="criteria-box__wave">
+                                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s"
+                                        viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                                                <stop stop-color="rgba(238, 235, 224, 1)" offset="0%"></stop>
+                                                <stop stop-color="rgba(238, 235, 224, 1)" offset="100%"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                                            d="M0,196L40,171.5C80,147,160,98,240,89.8C320,82,400,114,480,179.7C560,245,640,343,720,359.3C800,376,880,310,960,302.2C1040,294,1120,343,1200,359.3C1280,376,1360,359,1440,318.5C1520,278,1600,212,1680,163.3C1760,114,1840,82,1920,122.5C2000,163,2080,278,2160,269.5C2240,261,2320,131,2400,122.5C2480,114,2560,229,2640,261.3C2720,294,2800,245,2880,196C2960,147,3040,98,3120,106.2C3200,114,3280,180,3360,228.7C3440,278,3520,310,3600,334.8C3680,359,3760,376,3840,367.5C3920,359,4000,327,4080,326.7C4160,327,4240,359,4320,343C4400,327,4480,261,4560,253.2C4640,245,4720,294,4800,294C4880,294,4960,245,5040,228.7C5120,212,5200,229,5280,269.5C5360,310,5440,376,5520,359.3C5600,343,5680,245,5720,196L5760,147L5760,490L5720,490C5680,490,5600,490,5520,490C5440,490,5360,490,5280,490C5200,490,5120,490,5040,490C4960,490,4880,490,4800,490C4720,490,4640,490,4560,490C4480,490,4400,490,4320,490C4240,490,4160,490,4080,490C4000,490,3920,490,3840,490C3760,490,3680,490,3600,490C3520,490,3440,490,3360,490C3280,490,3200,490,3120,490C3040,490,2960,490,2880,490C2800,490,2720,490,2640,490C2560,490,2480,490,2400,490C2320,490,2240,490,2160,490C2080,490,2000,490,1920,490C1840,490,1760,490,1680,490C1600,490,1520,490,1440,490C1360,490,1280,490,1200,490C1120,490,1040,490,960,490C880,490,800,490,720,490C640,490,560,490,480,490C400,490,320,490,240,490C160,490,80,490,40,490L0,490Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="criteria-box__content__title">
+                                    Best Quality
+                                </div>
+                                <div class="criteria-box__content__desc">
+                                    Praesent pulvinar neque pellentesque mattis pretium.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="criteria-box">
+                            <div class="criteria-box__image">
+                                <img src="./Project Image/ADS/ads_time.png" alt="">
+                            </div>
+                            <div class="criteria-box__content">
+                                <div class="criteria-box__wave">
+                                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s"
+                                        viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                                                <stop stop-color="rgba(238, 235, 224, 1)" offset="0%"></stop>
+                                                <stop stop-color="rgba(238, 235, 224, 1)" offset="100%"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                                            d="M0,343L40,302.2C80,261,160,180,240,155.2C320,131,400,163,480,212.3C560,261,640,327,720,326.7C800,327,880,261,960,228.7C1040,196,1120,196,1200,196C1280,196,1360,196,1440,171.5C1520,147,1600,98,1680,130.7C1760,163,1840,278,1920,310.3C2000,343,2080,294,2160,269.5C2240,245,2320,245,2400,220.5C2480,196,2560,147,2640,106.2C2720,65,2800,33,2880,81.7C2960,131,3040,261,3120,334.8C3200,408,3280,425,3360,400.2C3440,376,3520,310,3600,253.2C3680,196,3760,147,3840,130.7C3920,114,4000,131,4080,171.5C4160,212,4240,278,4320,277.7C4400,278,4480,212,4560,179.7C4640,147,4720,147,4800,130.7C4880,114,4960,82,5040,98C5120,114,5200,180,5280,179.7C5360,180,5440,114,5520,106.2C5600,98,5680,147,5720,171.5L5760,196L5760,490L5720,490C5680,490,5600,490,5520,490C5440,490,5360,490,5280,490C5200,490,5120,490,5040,490C4960,490,4880,490,4800,490C4720,490,4640,490,4560,490C4480,490,4400,490,4320,490C4240,490,4160,490,4080,490C4000,490,3920,490,3840,490C3760,490,3680,490,3600,490C3520,490,3440,490,3360,490C3280,490,3200,490,3120,490C3040,490,2960,490,2880,490C2800,490,2720,490,2640,490C2560,490,2480,490,2400,490C2320,490,2240,490,2160,490C2080,490,2000,490,1920,490C1840,490,1760,490,1680,490C1600,490,1520,490,1440,490C1360,490,1280,490,1200,490C1120,490,1040,490,960,490C880,490,800,490,720,490C640,490,560,490,480,490C400,490,320,490,240,490C160,490,80,490,40,490L0,490Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="criteria-box__content__title">
+                                    On Time
+                                </div>
+                                <div class="criteria-box__content__desc">
+                                    Praesent pulvinar neque pellentesque mattis pretium.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="criteria-box">
+                            <div class="criteria-box__image">
+                                <img src="./Project Image/ADS/ads_chef.png" alt="">
+                            </div>
+                            <div class="criteria-box__content">
+                                <div class="criteria-box__wave">
+                                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s"
+                                        viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                                                <stop stop-color="rgba(238, 235, 224, 1)" offset="0%"></stop>
+                                                <stop stop-color="rgba(238, 235, 224, 1)" offset="100%"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                                            d="M0,196L40,179.7C80,163,160,131,240,138.8C320,147,400,196,480,228.7C560,261,640,278,720,269.5C800,261,880,229,960,204.2C1040,180,1120,163,1200,163.3C1280,163,1360,180,1440,220.5C1520,261,1600,327,1680,334.8C1760,343,1840,294,1920,294C2000,294,2080,343,2160,302.2C2240,261,2320,131,2400,89.8C2480,49,2560,98,2640,98C2720,98,2800,49,2880,89.8C2960,131,3040,261,3120,261.3C3200,261,3280,131,3360,106.2C3440,82,3520,163,3600,196C3680,229,3760,212,3840,204.2C3920,196,4000,196,4080,212.3C4160,229,4240,261,4320,261.3C4400,261,4480,229,4560,187.8C4640,147,4720,98,4800,106.2C4880,114,4960,180,5040,228.7C5120,278,5200,310,5280,310.3C5360,310,5440,278,5520,261.3C5600,245,5680,245,5720,245L5760,245L5760,490L5720,490C5680,490,5600,490,5520,490C5440,490,5360,490,5280,490C5200,490,5120,490,5040,490C4960,490,4880,490,4800,490C4720,490,4640,490,4560,490C4480,490,4400,490,4320,490C4240,490,4160,490,4080,490C4000,490,3920,490,3840,490C3760,490,3680,490,3600,490C3520,490,3440,490,3360,490C3280,490,3200,490,3120,490C3040,490,2960,490,2880,490C2800,490,2720,490,2640,490C2560,490,2480,490,2400,490C2320,490,2240,490,2160,490C2080,490,2000,490,1920,490C1840,490,1760,490,1680,490C1600,490,1520,490,1440,490C1360,490,1280,490,1200,490C1120,490,1040,490,960,490C880,490,800,490,720,490C640,490,560,490,480,490C400,490,320,490,240,490C160,490,80,490,40,490L0,490Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="criteria-box__content__title">
+                                    MasterChefs
+                                </div>
+                                <div class="criteria-box__content__desc">
+                                    Praesent pulvinar neque pellentesque mattis pretium.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="criteria-box">
+                            <div class="criteria-box__image">
+                                <img src="./Project Image/ADS/ads_food.png" alt="">
+                            </div>
+                            <div class="criteria-box__content">
+                                <div class="criteria-box__wave">
+                                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s"
+                                        viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                                                <stop stop-color="rgba(238, 235, 224, 1)" offset="0%"></stop>
+                                                <stop stop-color="rgba(238, 235, 224, 1)" offset="100%"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                                            d="M0,343L40,326.7C80,310,160,278,240,277.7C320,278,400,310,480,294C560,278,640,212,720,212.3C800,212,880,278,960,318.5C1040,359,1120,376,1200,334.8C1280,294,1360,196,1440,147C1520,98,1600,98,1680,81.7C1760,65,1840,33,1920,57.2C2000,82,2080,163,2160,220.5C2240,278,2320,310,2400,343C2480,376,2560,408,2640,359.3C2720,310,2800,180,2880,106.2C2960,33,3040,16,3120,8.2C3200,0,3280,0,3360,57.2C3440,114,3520,229,3600,228.7C3680,229,3760,114,3840,65.3C3920,16,4000,33,4080,40.8C4160,49,4240,49,4320,81.7C4400,114,4480,180,4560,196C4640,212,4720,180,4800,155.2C4880,131,4960,114,5040,130.7C5120,147,5200,196,5280,179.7C5360,163,5440,82,5520,114.3C5600,147,5680,294,5720,367.5L5760,441L5760,490L5720,490C5680,490,5600,490,5520,490C5440,490,5360,490,5280,490C5200,490,5120,490,5040,490C4960,490,4880,490,4800,490C4720,490,4640,490,4560,490C4480,490,4400,490,4320,490C4240,490,4160,490,4080,490C4000,490,3920,490,3840,490C3760,490,3680,490,3600,490C3520,490,3440,490,3360,490C3280,490,3200,490,3120,490C3040,490,2960,490,2880,490C2800,490,2720,490,2640,490C2560,490,2480,490,2400,490C2320,490,2240,490,2160,490C2080,490,2000,490,1920,490C1840,490,1760,490,1680,490C1600,490,1520,490,1440,490C1360,490,1280,490,1200,490C1120,490,1040,490,960,490C880,490,800,490,720,490C640,490,560,490,480,490C400,490,320,490,240,490C160,490,80,490,40,490L0,490Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="criteria-box__content__title">
+                                    Taste Food
+                                </div>
+                                <div class="criteria-box__content__desc">
+                                    Praesent pulvinar neque pellentesque mattis pretium.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </gird>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-12 c-12 m-12">
+                    <div class="footer-social">
+                        <div class="footer-social__icon">
+                            <i class="ti-facebook"></i>
+                        </div>
+                        <div class="footer-social__icon">
+                            <i class="ti-twitter"></i>
+                        </div>
+                        <div class="footer-social__icon">
+                            <i class="ti-instagram"></i>
+                        </div>
+                        <div class="footer-social__icon">
+                            <i class="ti-github"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <div class="footer-logo">
+                        <img src="./Project Image/Logo Png/logo__footer.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-desc__wrap">
+                    <div class="footer-desc">
+                        L-FOOD
+                    </div>
+                    <div class="footer-desc">
+                        District 7, HCM City, VN
+                    </div>
+                    <div class="footer-desc">
+                        Telephone: +84 769 724 974
+                    </div>
+                    <div class="footer-desc">
+                        Fax: +1 555 4444
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <div class="footer-nocopy">
+                        Copyright © 2021 <a href="#">VTL</a> Develop.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Content Nav Mobile-->
+    <div class="modal hide-pc">
+        <div class="nav__mobile__content hide-pc">
+            <div class="nav__mobile__content__icon-close">
+                <i class="ti-close close-nav-mobile"></i>
+            </div>
+            <div class="nav__mobile__content__list">
+                <div class="nav__mobile__content__item" data-navbarvalue="New product">
+                    New product
+                </div>
+                <div class="nav__mobile__content__item" onclick="handelNavBarMobile('pizza')">
+                    Pizza
+                </div>
+                <div class="nav__mobile__content__item" onclick="handelNavBarMobile('burger')">
+                    Hamberger
+                </div>
+                <div class="nav__mobile__content__item" onclick="handelNavBarMobile('donut')">
+                    Donut
+                </div>
+                <div class="nav__mobile__content__item" data-navbarvalue="News">
+                    News
+                </div>
+                <div class="nav__mobile__content__item" data-navbarvalue="Store Location">
+                    Store Location
+                </div>
+                <div class="nav__mobile__content__item" data-navbarvalue="Recruitment">
+                    Recruitment
+                </div>
+            </div>
+            <div class="nav__mobile__content__name-author">
+                <a href="https://www.facebook.com/Loi.VTL1108/" target="_blank">Develop by VTL</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Content User Login, Sign up PC-->
+    <div class="user__modal hide-mobile">
+        <form class="user__login__form hide-mobile">
+            <div class="login__form__igmage">
+                <img src="./Project Image/User Form/Login/login-image.png" alt="" class="login__form__image__child">
+            </div>
+            <div class="login__form__content">
+                <div class="login__form__content__title">
+                    Login
+                </div>
+                <div class="login__form-item">
+                    <div class="login-gmail">
+                        <label for="email-login">E-mail</label>
+                        <input type="text" id="email-login" onblur="validateFormEmail('email-login',1)"
+                            placeholder="Enter your email">
+                        <div class="email__login__message-fail-1">
+                            You have not entered the correct email!
+                        </div>
+                        <div class="email__login__message-empty-1">
+                            Empty email!
+                        </div>
+                    </div>
+                    <div class="login-password">
+                        <label for="password-login">Password</label>
+                        <input type="password" id="password-login" onblur="validateFormPassword('password-login',1)"
+                            placeholder="Enter password">
+                        <div class="password__login__message-fail-1">
+                            Password must be more than 8 characters
+                        </div>
+                        <div class="password__login__message-empty-1">
+                            Empty Password!
+                        </div>
+                    </div>
+                </div>
+                <div class="login__form__btn-login" onclick="handelSubmit('email-login', 'password-login', 1)">
+                    Login
+                </div>
+                <div class="login__form__option">
+                    <span class="login__form_option__text">Or</span>
+                </div>
+                <div class="login__form__social">
+                    <i class="ti-google"></i>
+                    <span>Login with Google</span>
+                </div>
+            </div>
+            <div class="login__form__btn-close">
+                <i class="ti-close"></i>
+            </div>
+        </form>
+        <form class="user__sing-up__form hide-mobile">
+            <div class="sign-up__form__image">
+                <img src="./Project Image/User Form/Sign up/sign-up-image.png" alt=""
+                    class="sign-up__form__image__child">
+            </div>
+            <div class="sign-up__form__content">
+                <div class="sign-up__form__content__title">
+                    Sign Up
+                </div>
+                <div class="sign-up__go-login">
+                    <span class="sign-up__go-login__text">
+                        Already a member?
+                    </span>
+                    <span class="sign-up__go-login__link">
+                        Login
+                    </span>
+                </div>
+                <div class="sign-up__form-item">
+                    <div class="sign-up__gmail">
+                        <label for="email__sign-up">E-mail</label>
+                        <input type="text" id="email__sign-up" onblur="validateFormEmail('email__sign-up',2)"
+                            placeholder="Enter your email">
+                        <div class="email__login__message-fail-2">
+                            You have not entered the correct email!
+                        </div>
+                        <div class="email__login__message-empty-2">
+                            Empty email!
+                        </div>
+                    </div>
+                    <div class="sign-up__password">
+                        <label for="password__sign-up">Set Password</label>
+                        <input type="password" id="password__sign-up"
+                            onblur="validateFormPassword('password__sign-up', 2)" placeholder="Enter password">
+                        <div class="password__login__message-fail-2">
+                            Password must be more than 8 characters
+                        </div>
+                        <div class="password__login__message-empty-2">
+                            Empty Password!
+                        </div>
+                    </div>
+                </div>
+                <div class="sign-up__form__btn__sign-up"
+                    onclick="handelSubmit('email__sign-up', 'password__sign-up', 2)">
+                    Create an account
+                </div>
+                <div class="sign-up__form__option">
+                    <span class="sign-up__form_option__text">Or</span>
+                </div>
+                <div class="sign-up__form__social">
+                    <i class="ti-google"></i>
+                    <span>Sign up with Google</span>
+                </div>
+
+            </div>
+            <div class="sign-up__form__btn-close">
+                <i class="ti-close"></i>
+            </div>
+        </form>
+    </div>
+
+    <!--Content User Login, Sign up Mobile-->
+    <div class="user__modal__mobile hide-pc">
+        <div class="user__modal__mobile__image">
+            <img src="./Project Image/Content Image First/content-first.jpg" alt=""
+                class="user__modal__mobile__image-child">
+
+            <div class="user__modal__mobile__image__effect">
+                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 440" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                            <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                            <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                        d="M0,220L60,190.7C120,161,240,103,360,132C480,161,600,279,720,337.3C840,396,960,396,1080,359.3C1200,323,1320,249,1440,227.3C1560,205,1680,235,1800,212.7C1920,191,2040,117,2160,80.7C2280,44,2400,44,2520,66C2640,88,2760,132,2880,132C3000,132,3120,88,3240,117.3C3360,147,3480,249,3600,264C3720,279,3840,205,3960,212.7C4080,220,4200,308,4320,315.3C4440,323,4560,249,4680,198C4800,147,4920,117,5040,110C5160,103,5280,117,5400,154C5520,191,5640,249,5760,227.3C5880,205,6000,103,6120,66C6240,29,6360,59,6480,66C6600,73,6720,59,6840,51.3C6960,44,7080,44,7200,95.3C7320,147,7440,249,7560,256.7C7680,264,7800,176,7920,139.3C8040,103,8160,117,8280,146.7C8400,176,8520,220,8580,242L8640,264L8640,440L8580,440C8520,440,8400,440,8280,440C8160,440,8040,440,7920,440C7800,440,7680,440,7560,440C7440,440,7320,440,7200,440C7080,440,6960,440,6840,440C6720,440,6600,440,6480,440C6360,440,6240,440,6120,440C6000,440,5880,440,5760,440C5640,440,5520,440,5400,440C5280,440,5160,440,5040,440C4920,440,4800,440,4680,440C4560,440,4440,440,4320,440C4200,440,4080,440,3960,440C3840,440,3720,440,3600,440C3480,440,3360,440,3240,440C3120,440,3000,440,2880,440C2760,440,2640,440,2520,440C2400,440,2280,440,2160,440C2040,440,1920,440,1800,440C1680,440,1560,440,1440,440C1320,440,1200,440,1080,440C960,440,840,440,720,440C600,440,480,440,360,440C240,440,120,440,60,440L0,440Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="user__modal__mobile__image__icon-close">
+                <i class="ti-close"></i>
+            </div>
+        </div>
+        <form class="user__mobile__login__form hide-pc">
+            <div class="user__mobile__login__form__title">
+                Login
+            </div>
+            <div class="user__mobile__login__form__content">
+                <div class="user__mobile__login__email">
+                    <input type="text" id="user__mobile__login__email__text"
+                        onblur="validateFormEmail('user__mobile__login__email__text',3)" placeholder="Enter your email">
+                    <div class="email__login__message-fail-3">
+                        You have not entered the correct email!
+                    </div>
+                    <div class="email__login__message-empty-3">
+                        Empty email!
+                    </div>
+                </div>
+                <div class="user__mobile__login__password">
+                    <input type="password" id="user__mobile__login__password__text"
+                        onblur="validateFormPassword('user__mobile__login__password__text',3)"
+                        placeholder="Enter password">
+                    <div class="password__login__message-fail-3">
+                        Password must be more than 8 characters
+                    </div>
+                    <div class="password__login__message-empty-3">
+                        Empty Password!
+                    </div>
+                </div>
+            </div>
+            <div class="user__mobile__login__form__no-account">
+                <span class="user__mobile__login__form__no-account__text">
+                    Create an account?
+                </span>
+                <span class="user__mobile__login__form__no-account__link">
+                    Sign up
+                </span>
+            </div>
+            <div class="user__mobile__login__form__btn"
+                onclick="handelSubmit('user__mobile__login__email__text', 'user__mobile__login__password__text', 3)">
+                Login
+            </div>
+            <div class="user__mobile__login__form__social">
+                <img src="./Project Image/icon/google-icon.png" alt=""
+                    class="user__mobile__login__form__social__icon-img">
+            </div>
+        </form>
+        <form class="user__mobile__sign-up__form hide-pc">
+            <div class="user__mobile__sign-up__form__title">
+                Sign up
+            </div>
+            <div class="user__mobile__sign-up__form__content">
+                <div class="user__mobile__sign-up__email">
+                    <input type="text" id="user__mobile__sign-up__email__text"
+                        onblur="validateFormEmail('user__mobile__sign-up__email__text',4)"
+                        placeholder="Enter your email">
+                    <div class="email__login__message-fail-4">
+                        You have not entered the correct email!
+                    </div>
+                    <div class="email__login__message-empty-4">
+                        Empty email!
+                    </div>
+                </div>
+                <div class="user__mobile__sign-up__password">
+                    <input type="password" id="user__mobile__sign-up__password__text"
+                        onblur="validateFormPassword('user__mobile__sign-up__password__text',4)"
+                        placeholder="Set password">
+                    <div class="password__login__message-fail-4">
+                        Password must be more than 8 characters
+                    </div>
+                    <div class="password__login__message-empty-4">
+                        Empty Password!
+                    </div>
+                </div>
+            </div>
+            <div class="user__mobile__sign-up__form__no-account">
+                <span class="user__mobile__sign-up__form__no-account__text">
+                    Already a member?
+                </span>
+                <span class="user__mobile__sign-up__form__no-account__link">
+                    Login
+                </span>
+            </div>
+            <div class="user__mobile__sign-up__form__btn"
+                onclick="handelSubmit('user__mobile__sign-up__email__text', 'user__mobile__sign-up__password__text', 4)">
+                Sign up
+            </div>
+            <div class="user__mobile__sign-up__form__social">
+                <img src="./Project Image/icon/google-icon.png" alt=""
+                    class="user__mobile__login__form__social__icon-img">
+            </div>
+        </form>
+    </div>
+
+    <!--Toast Message-->
+    <div class="toast-message">
+        <div class="toast-message__icon">
+            <img src="./Project Image/Icon/icon-fail.png" alt="" class="toast-message__icon__img">
+        </div>
+        <div class="toast-message__content">
+            <div class="toast-message__content__text">
+                We don't support this feature yet!
+            </div>
+            <div class="toast-message__content__close__btn">
+                <i class="ti-close"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--Detail Page-->
+    <div class="detail__modal">
+        <div class="detail-page">
+            <div class="detail-page__nav">
+                <div class="detail-page__nav__item home">
+                    <span>Home</span>
+                    <i class="ti-angle-right"></i>
+                </div>
+                <div class="detail-page__nav__item pizza">
+                    <span>Pizza</span>
+                    <i class="ti-angle-right"></i>
+                </div>
+                <div class="detail-page__nav__item">
+                    <span>Trio Cheese</span>
+                </div>
+            </div>
+            <div class="deltal-page__main-content">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6 c-12 m-12">
+                            <div class="deltal-page__main-content__image">
+                                <img src="./Project Image/Product Image/Pizza/p5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col l-6 c-12 m-12">
+                            <div class="deltal-page__main__text">
+                                <div class="detail-page__title">
+                                    <div class="detail-page__title__text">
+                                        Trio Cheese
+                                    </div>
+                                    <div class="detail-page__title__desc">
+                                        Mouth watering pepperoni, cabanossi, mushroom, capsicum, black olives and
+                                        stretchy mozzarella,
+                                    </div>
+                                </div>
+                                <div class="detail-page__choice">
+                                    <div class="detail-page__size__title">
+                                        Pick Size
+                                    </div>
+                                    <div class="detail-page__size__content">
+                                        <div class="detail-page__size__choice active" data-valuechoice="size-x"
+                                            data-pricechoice="5">
+                                            <div class="detail-page__size__choice__icon active" id="size-x">
+                                                X
+                                            </div>
+                                            <div class="detail-page__size__choice__price">
+                                                5$
+                                            </div>
+                                        </div>
+                                        <div class="detail-page__size__choice" data-valuechoice="size-m"
+                                            data-pricechoice="8">
+                                            <div class="detail-page__size__choice__icon" id="size-m">
+                                                M
+                                            </div>
+                                            <div class="detail-page__size__choice__price">
+                                                8$
+                                            </div>
+                                        </div>
+                                        <div class="detail-page__size__choice" data-valuechoice="size-l"
+                                            data-pricechoice="10">
+                                            <div class="detail-page__size__choice__icon" id="size-l">
+                                                L
+                                            </div>
+                                            <div class="detail-page__size__choice__price">
+                                                10$
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="detail-page__size__price">
+                                        <span class="detail-page__size__price__value">5</span>
+                                        $
+                                    </div>
+                                </div>
+                                <div class="detail-page__quanlity">
+                                    <div class="detail-page__quanlity__title">
+                                        Quanlity
+                                    </div>
+                                    <div class="detail-page__quanlity__box__wrap">
+                                        <div class="detail-page__quanlity__box">
+                                            <i class="ti-minus detail-page__quanlity__box__minus"></i>
+                                            <input type="text" value="1" class="detail-page__quanlity__box__value">
+                                            <i class="ti-plus detail-page__quanlity__box__plus"></i>
+                                        </div>
+                                        <div class="detail-page__quanlity__btn" onclick=addToCart()>
+                                            <i class="ti-shopping-cart"></i>
+                                            <span>Add to cart </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid wide">
+                        <div class="top-product-best-choice__title">
+                            <span>
+                                Similar products
+                            </span>
+                        </div>
+                        <div class="top-product-best-choice__content">
+                            <div class="top-product-best-choice__content__product">
+                                <div class="top-product-best-choice__content__item">
+                                    <div class="product-best-choice-image">
+                                        <img src="./Project Image/Product Image/Pizza/p1.png" alt="">
+                                    </div>
+                                    <div class="product-best-choice-content-text">
+                                        <div class="prouct-best-choice-title">
+                                            Donut 1
+                                        </div>
+                                        <div class="product-best-choice-desc">
+                                            Shrimp, Red Capsicum, Green Capsicum, Onion, Chilli flakes, Lemon
+                                            Pepper, Mozzarella, finished with Aioli
+                                        </div>
+                                    </div>
+                                    <div class="product-best-choice-btn">
+                                        Select options
+                                    </div>
+                                </div>
+                                <div class="top-product-best-choice__content__item">
+                                    <div class="product-best-choice-image">
+                                        <img src="./Project Image/Product Image/Pizza/p2.png" alt="">
+                                    </div>
+                                    <div class="product-best-choice-content-text">
+                                        <div class="prouct-best-choice-title">
+                                            Pizza summer
+                                        </div>
+                                        <div class="product-best-choice-desc">
+                                            Crispy bacon, tasty ham, pineapple, onion and stretchy mozzarella, finished
+                                            with a
+                                            BBQ swirl.
+                                        </div>
+                                    </div>
+                                    <div class="product-best-choice-btn">
+                                        Select options
+                                    </div>
+                                </div>
+                                <div class="top-product-best-choice__content__item">
+                                    <div class="product-best-choice-image">
+                                        <img src="./Project Image/Product Image/Pizza/p3.png" alt="">
+                                    </div>
+                                    <div class="product-best-choice-content-text">
+                                        <div class="prouct-best-choice-title">
+                                            Buger Special
+                                        </div>
+                                        <div class="product-best-choice-desc">
+                                            Extra-virgin olive oil, garlic, mozzarella cheese, onions, mushrooms, green
+                                            olives,
+                                            black olives, fresh tomatoes.
+                                        </div>
+                                    </div>
+                                    <div class="product-best-choice-btn">
+                                        Select options
+                                    </div>
+                                </div>
+                                <div class="top-product-best-choice__content__item">
+                                    <div class="product-best-choice-image">
+                                        <img src="./Project Image/Product Image/Pizza/p4.png" alt="">
+                                    </div>
+                                    <div class="product-best-choice-content-text">
+                                        <div class="prouct-best-choice-title">
+                                            Donut 1
+                                        </div>
+                                        <div class="product-best-choice-desc">
+                                            Shrimp, Red Capsicum, Green Capsicum, Onion, Chilli flakes, Lemon
+                                            Pepper, Mozzarella, finished with Aioli
+                                        </div>
+                                    </div>
+                                    <div class="product-best-choice-btn">
+                                        Select options
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./javascript/handel.js"></script>
+    <script type="module" src="./javascript/product.js"></script>
+</body>
+
+</html>
